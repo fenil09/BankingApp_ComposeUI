@@ -9,6 +9,7 @@ object CardObject {
             cardholdername = "Fenil",
             cardtype = "Visa",
             expirationDate = "25/78",
+            cardimage = R.drawable.visa,
             startcolor = PurpleStart,
             endColor = PurpleEnd
         ),
@@ -17,6 +18,7 @@ object CardObject {
             cardholdername = "Cristiano",
             cardtype = "Mastercard",
             expirationDate = "14/24",
+            cardimage = R.drawable.mastercard,
             startcolor = BlueStart,
             endColor = BlueEnd
         ),
@@ -24,8 +26,9 @@ object CardObject {
         CardData(
             cardnumber = "5477 7845 5235 6600",
             cardholdername = "Messi",
-            cardtype = "American Express",
+            cardtype = "Discover",
             expirationDate = "20/29",
+            cardimage = R.drawable.discover,
             startcolor = OrangeStart,
             endColor = OrangeEnd
         )

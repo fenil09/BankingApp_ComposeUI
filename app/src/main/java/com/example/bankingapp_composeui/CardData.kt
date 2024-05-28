@@ -8,6 +8,7 @@ data class CardData(
     val cardholdername:String,
     val expirationDate:String,
     val cardtype:String,
+    val cardimage:Int,
     val startcolor: Color,
     val endColor:Color
 )
