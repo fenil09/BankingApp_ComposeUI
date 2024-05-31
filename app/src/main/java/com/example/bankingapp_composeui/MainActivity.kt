@@ -18,7 +18,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.ahmedapps.bankningappui.ui.theme.*
 import com.example.bankingapp_composeui.ui.theme.BankingApp_ComposeUITheme
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
@@ -27,26 +26,23 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             BankingApp_ComposeUITheme {
-
-           ChangeStausBarColor(color = Color.Black)
-                Column(modifier =Modifier.fillMaxSize().clip(RoundedCornerShape(10.dp))) {
+                ChangeStausBarColor(color = Color.Black)
+                Column(modifier = Modifier.fillMaxSize().clip(RoundedCornerShape(10.dp))) {
                     TopSection()
                     Spacer(modifier = Modifier.height(15.dp))
-                    CreditCardListInvocation(cards = CardObject.cards)
+                    // Choose one of the following based on your requirement
+                    // CreditCardListInvocation(cards = CardObject.cards)
+                    FinanceSectionInvocation(financedata = FInanceObject.financedata)
                 }
             }
         }
     }
 }
 
-
 @Composable
-fun ChangeStausBarColor(color: Color){
-
-    val systemUiController= rememberSystemUiController()
+fun ChangeStausBarColor(color: Color) {
+    val systemUiController = rememberSystemUiController()
     SideEffect {
         systemUiController.setSystemBarsColor(color)
     }
 }
-
-
