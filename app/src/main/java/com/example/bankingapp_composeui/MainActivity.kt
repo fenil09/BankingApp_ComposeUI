@@ -16,6 +16,7 @@ import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.modifier.modifierLocalMapOf
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.bankingapp_composeui.ui.theme.BankingApp_ComposeUITheme
@@ -30,8 +31,8 @@ class MainActivity : ComponentActivity() {
                 Column(modifier = Modifier.fillMaxSize().clip(RoundedCornerShape(10.dp))) {
                     TopSection()
                     Spacer(modifier = Modifier.height(15.dp))
-                    // Choose one of the following based on your requirement
-                    // CreditCardListInvocation(cards = CardObject.cards)
+                     CreditCardListInvocation(cards = CardObject.cards)
+                    Spacer(modifier = Modifier.height(25.dp))
                     FinanceSectionInvocation(financedata = FInanceObject.financedata)
                 }
             }

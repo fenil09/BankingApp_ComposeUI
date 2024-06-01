@@ -7,10 +7,10 @@ import androidx.compose.material.icons.rounded.Wallet
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.colorResource
-import com.example.bankingapp_composeui.ui.theme.BlueStart
-import com.example.bankingapp_composeui.ui.theme.GreenStart
-import com.example.bankingapp_composeui.ui.theme.OrangeStart
-import com.example.bankingapp_composeui.ui.theme.PurpleStart
+import com.ahmedapps.bankningappui.ui.theme.BlueStart
+import com.ahmedapps.bankningappui.ui.theme.GreenStart
+import com.ahmedapps.bankningappui.ui.theme.OrangeStart
+import com.ahmedapps.bankningappui.ui.theme.PurpleStart
 
 object FInanceObject {
 
