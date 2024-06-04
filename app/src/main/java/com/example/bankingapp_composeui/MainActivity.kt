@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
                     TopSection()
                     Spacer(modifier = Modifier.height(15.dp))
                      CreditCardListInvocation(cards = CardObject.cards)
-                    Spacer(modifier = Modifier.height(25.dp))
+                    Spacer(modifier = Modifier.height(60.dp))
                     FinanceSectionInvocation(financedata = FInanceObject.financedata)
                 }
             }

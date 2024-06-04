@@ -17,6 +17,8 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun FiananceSection(financedata:FInanceData){
+    Text(text = "Finances", fontSize = 22.sp, color = Color.Black, fontWeight = FontWeight.SemiBold)
+    Spacer(modifier = Modifier.height(100.dp))
     Card (
         modifier = Modifier.width(130.dp).height(130.dp)
             .padding(8.dp),
