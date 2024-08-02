@@ -6,7 +6,8 @@ import androidx.compose.ui.graphics.vector.ImageVector
 data class BottomNavigationItems(
     val title:String,
     var selectedicon:ImageVector,
-    var unselectedicon:ImageVector
+    var unselectedicon:ImageVector,
+    val route:String
 )
 
 
